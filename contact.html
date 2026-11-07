@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Fardin Likhon — Computer Science Engineer skilled in web development, AI, and software projects." />
+  <title>Contact | Fardin Likhon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="Karuna Port.jpeg" alt="Karuna Biswas Satu" class="logo-img">
+        <div class="logo-text">
+          <h1>Karuna Biswas Satu</h1>
+          <p>Computer Science Engineer</p>
+        </div>
+      </div>
+
+      <div class="hamburger"><i class="fa fa-bars"></i></div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li><a href="skill.html"><b>Skills</b></a></li>
+        <li><a href="project.html"><b>Projects</b></a></li>
+        <li><a href="contact.html" class="active"><b>Contact</b></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="contact-section">
+    <h1>Contact <span>Me</span></h1>
+    <div class="contact-info">
+      <p><i class="fa fa-phone"></i> +880 1760179500</p>
+        
+      <p><i class="fa fa-envelope"></i> satu22205101542@diu.edu.bd</p>
+      <p><i class="fab fa-github"></i> https://github.com/Karuna-satu</p>
+    </div>
+    <div class="thank-you">Thank You!</div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karuna Biswas Satu | All Rights Reserved</p>
+    <div class="socials">
+      <a href="https://github.com/Karuna-satu" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      
+      <a href="mailto:satu22205101542@diu.edu.bd" aria-label="Email"><i class="fa fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>
