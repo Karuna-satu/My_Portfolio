@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Fardin Likhon — Computer Science Engineer skilled in web development, AI, and software projects." />
+  <title>Karuna Biswas Satu — Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Ensure the body resets margins and handles layout properly */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Target the hero section safely below the fixed nav */
+    .hero-container {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      margin-top: 80px; /* Safe space for fixed navbar */
+      box-sizing: border-box;
+    }
+
+    .hero-image-wrapper {
+      margin-bottom: 25px;
+      flex-shrink: 0;
+    }
+
+    .hero-profile-img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 50%;
+    }
+
+    .hero-text-content {
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .hero-text-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text-content p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      margin: 20px auto 30px auto;
+    }
+
+    .hero-btn {
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    /* Mobile Responsive Optimizations */
+    @media (max-width: 768px) {
+      .hero-container {
+        margin-top: 70px; /* Adjusted spacing for smaller mobile headers */
+        justify-content: flex-start; /* Stops phone viewport from crushing contents up */
+        padding-top: 30px;
+      }
+
+      .hero-profile-img {
+        width: 220px;  /* Scales down photo on mobile screens */
+        height: 220px;
+        max-width: 65vw;
+        max-height: 65vw;
+      }
+
+      .hero-text-content h1 {
+        font-size: 2.2rem; /* Avoids oversized text pushing image out of view */
+      }
+
+      .hero-text-content p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+      
+      /* Forces your name onto its own clean block on tiny screens */
+      .hero-text-content h1 span {
+        display: block; 
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="logo-container">
+        <img src="Karuna Port.jpeg" alt="Fardin Likhon" class="logo-img">
+        <div class="logo-text">
+          <h1>Karuna Biswas Satu</h1>
+          <p>Computer Science Engineer</p>
+        </div>
+      </div>
+      
+      <div class="hamburger"><i class="fa fa-bars"></i></div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active"><b>Home</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li><a href="skill.html"><b>Skills</b></a></li>
+        <li><a href="project.html"><b>Projects</b></a></li>
+        <li><a href="contact.html"><b>Contact</b></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-container">
+    <div class="hero-image-wrapper">
+      <img src="Karuna Port.jpeg" alt="Fardin Likhon" class="hero-profile-img">
+    </div>
+
+    <div class="hero-text-content">
+      <h1>Hello, I'm <span>Karuna Biswas Satu</span></h1>
+      <p>
+        As a <b>Computer Science and Engineering graduate</b> from <b>Daffodil International University</b>, I am passionate about combining technical expertise with innovative thinking to develop intelligent, data-driven solutions. My interests span software development, machine learning, and user-centered design, with a focus on creating efficient, scalable, and impactful technologies that address real-world challenges.
+      </p>
+      <a href="about.html" class="btn hero-btn">Learn More</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Karuna Biswas Satu | All Rights Reserved</p>
+    <div class="socials">
+      <a href="https://github.com/Karuna-satu" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      
+      <a href="mailto:satu22205101542@diu.edu.bd" aria-label="Email"><i class="fa fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  </script>
+</body>
+</html>
